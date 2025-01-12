@@ -1,0 +1,194 @@
+:root{--main-color:rgb(87, 86, 86);}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.reg{
+ margin-left: 50px;
+ color: var(--main-color);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color);
+}
+.info #lable-fname{
+    font-size: 20px;
+}
+.info #fname{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 1px rgb(206, 200, 200); 
+}
+.info #lname{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 1px rgb(206, 200, 200); 
+}
+.info #email{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 1px rgb(206, 200, 200); 
+}
+.info #pass{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border: solid 1px rgb(206, 200, 200); 
+}
+.info #lable-lname{
+    font-size: 20px;
+}
+.info #lable-email{
+    font-size: 20px;
+}
+.info #lable-pass{
+    font-size: 20px;
+}
+.info span{
+    color: red;
+}
+.info #submit{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#submit:hover{
+    background-color: #317134;
+}
+.regWith{
+    display: flex;
+    flex-direction: row;
+}
+.facebook{
+    width: 190px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #3B5998;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+}
+.facebook:hover{
+    background-color: #88a1d7;
+}
+.facebook p{
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+
+    margin-top: 10px;
+}
+.facebook a{
+    text-decoration: none;
+    color: white;
+}
+.google{
+    width: 190px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #dd4b39;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .3s ease-in-out;
+    
+}
+.google:hover{
+    background-color: #e88e7a;
+}
+.google p{
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+
+    margin-top: 10px;
+}
+.google a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*side bar//////////////////////////////////////////////*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    display: none; 
+}
+
+#sidebar.show {
+    
+    display: block;
+}
+#userData p{
+    font-size: 25px;
+
+}
+#userData #regButton{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#userData #regButton:hover{
+    background-color: #467549;
+}
+#sidebar #changePassword{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#sidebar #changePassword:hover{
+    background-color: #7f4c4c;
+}
+#sidebar #logout{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #4c4caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#sidebar #logout:hover{
+    background-color: #4c4c7f;
+}
+
