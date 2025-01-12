@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_details</title>
+    <link rel="stylesheet" href="../style/style_pro_details.css">
+  <link rel="stylesheet" href="../style/header-footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="sidebar">
+  <button id="closeSidebar" class="close-btn">×</button> 
+       <p id="userData"></p>
+       <button id="changePassword">Change Password</button>
+       <button id="logout">Log Out</button>
+     </div>
+<header>
+        <div class="Menu-barr">
+            <!-- Logo -->
+            <span>
+                <a href="../index.html"> <img calss="logo-img" src="../assets/logo2.webp" 
+                    style="width: 160px; height: 60px; margin-left: 30px;">
+                </a>
+            </span>
+            
+        <!-- Navigation Menu -->
+        <span>
+            <ul class="nav-menu">
+                <li class="nav-bar">
+                    <a class="tab" onclick="window.location.href='home.html?category=men'">MEN</a>
+                    <ul class="dropdown">
+                        <li><a>APPAREL</a></li>
+                        <li><a>ACCESSORIES</a></li>
+                        <li><a>SHOES</a></li>
+                        <li><a>PAJAMA</a></li>
+                        <li><a>OUTERWEAR</a></li>
+                        <li><a>TROUSERS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar">
+                    <a class="tab"onclick="window.location.href='home.html?category=kids'">KIDS</a>
+                    <ul class="dropdown">
+                        <li><a>APPAREL</a></li>
+                        <li><a>ACCESSORIES</a></li>
+                        <li><a>PAJAMA</a></li>
+                        <li><a>TROUSERS</a></li>
+                        <li><a>SHOES</a></li>
+                    </ul>
+                </li>
+                <li class="nav-bar"><a class="tab" onclick="window.location.href='home.html?category=newarrival'">NEW ARRIVAL</a></li>
+                <li class="nav-bar"><a class="tab" onclick="window.location.href='home.html?category=summer'" >SUMMER</a></li>
+                <li class="nav-bar"><a class="tab"  onclick="window.location.href='home.html?category=winter'" >WINTER</a></li>
+            </ul>
+        </span>
+
+        <!-- Right Icons -->
+        <span>
+            <button id="userIcon" class="user-btn"><i class="fa-solid fa-user"></i></button>
+            <a href="wishlist.html"><i id="icons" class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"><i id="icons" class="fa-solid fa-cart-shopping"></i></a>
+        </span>
+    </div>
+</header>
+    <div id="backToHome_Container">
+        <span id="backToHome">
+            <a href="#" class="link-Decoration" id="home">Home</a>
+        </span>
+        <span>&gt;</span>
+        <span class="proName">Product Name-Null</span>
+    </div>
+    <br />
+    <hr>
+    <br />
+    <!--The Product Details-->
+    <div id="container_Producut_pic_info">
+
+        <!--Img of the Product Container-->
+        <span class="floatBox" id="img_product_left">
+            <img alt="prod" id="pro_img" class="imgPro">
+            <!-- <div id="product_Conatiner"></div> -->
+        </span>
+        <!--Product Info-Details Container-->
+        <span class="floatBox" id="product_details_container_right">
+            <!--Details-->
+            <div id="info">
+                <h3 id="info_Name" class="proName">Product Name-Null</h3>
+                <p id="info_Category">Category-Null</p>
+                <p id="info_Availability">Availability : 2 In Stock</p>
+                <h3 id="info_Price">
+                    <!-- <span class="currency">LE </span>
+                    <span id="main_Cost">Price*2.5</span>
+                    <span class="currency"> LE </span>
+                    <span id="offer_Cost">Price</span> -->
+                    <span class="styleMainCost currency">Null</span>
+                    <span id="mainCost" class="styleMainCost">Price*2.5</span>
+                    <span class="currency"> Null </span>
+                    <span id="offerCost">Price</span>
+                </h3>
+                <p id="info_Color">
+                    <span>Color : </span>
+                    <span id="color_Value">Null</span>
+                </p>
+                <p id="info_Icon-ShowColor">
+                    <img alt="icon" id="icon_ShowColor" class="imgPro">
+                    <!-- <img src="./صورة شخصية.jpg" alt="" id="icon_ShowColor"> -->
+                </p>
+                <p id="info_Size">
+                    <span>Size : </span>
+                    <span id="size">Null</span>
+                </p>
+                <!-- <p id="info_Size">Size : <span id="size">S</span></p> -->
+                <p id="info_Quantity">Quantity :</p>
+                <p id="info_quantity_Dec-Inc">
+                    <span id="quantity_Dec">-</span>
+                    <span id="quantity_Counter">Null</span>
+                    <span id="quantity_Inc">+</span>
+                </p>
+                <p id="info_price-X-quantity">
+                    <span>Subtotal: </span><span class="currency">LE </span><span id="final_Cost"> Price </span>
+                </p>
+                <p id="info_sizeGuide">
+                    <a href="../assets/SizeGuide.webp" target="_blank" class="link-Decoration" id="SizeGuide">Size Guide</a>
+                </p>
+            </div>
+            <!--Buttons-->
+            <div id="buttons-Container">
+                <span><button id="addToCart" class="btn_float">ADD TO CART</button></span>
+                <span><button id="toWishList" class="btn_float">&#10084;</button></span>
+            </div>
+            <div class="clear_float"></div>
+            <br />
+            <div id="button-Payment">
+                <button id="toPayment">Buy it now</button>
+            </div>
+        </span>
+    </div>
+
+    <div class="clear_float"></div>
+<div class="footer">
+    <div class="mail">
+      <h1>SIGN-UP FOR TOWN TEAM NEWSLETTER</h1>
+      <p>be the first to know about our newest arrivals, special offers and store events near you.</p>
+      <form action="">
+        <input type="text" placeholder="enter your email address">
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <hr>
+    <div class="mid">
+      <div class="service">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="">Town Team Terms And Condition</a></li>
+          <li><a href="">TOWN TEAM Privacy Policy</a></li>
+          <li><a href="">Delivery And Returns</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Refund policy</a></li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3>ABOUT</h3>
+        <ul>
+          <li><a href="">About TOWN TEAM</a></li>
+          <li><a href="">How To Purchase</a></li>
+        </ul>
+      </div>
+      <div class="contactus">
+        <h3>CONTACT US</h3>
+        <ul>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="keep">
+        <h3>keep in touch</h3>
+        <ul>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-tiktok"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+        <div class="pay"><h3>Payment Accept</h3>
+        <img src="../assets/ 2025-01-08 172747.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="townteam">© TOWN TEAM 2024</div>
+  </div>
+    <script src="../js/js_product_details.js"></script>
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

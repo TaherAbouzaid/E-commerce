@@ -1,0 +1,269 @@
+* {
+  font-family: Arial, sans-serif;
+  /* background-color: #ffffff; */
+  margin: 0;
+
+}
+
+#backToHome_Container {
+  margin: 10px;
+  font-size: 20px;
+  color: #3c3737;
+  margin-top: 100px;
+}
+
+#container_Producut_pic_info {
+  width: 100%;
+  height: 1000px;
+  margin-top: 30px;
+  /* border: 1px solid black; */
+  /* width: 100%; */
+  /* margin: 0; */
+}
+
+#img_product_left {
+  /* height: 95%; */
+  /* width: 60%; */
+  /* text-align: center; */
+  /* text-align: center; */
+  /* height: 100%; */
+  /* width: 58%; الكونتينر يأخذ 50% من عرض الصفحة */
+  /* margin: 0; توسيط الكونتينر */
+  /* border: 1px solid #ccc; إطار للتوضيح */
+  /* padding: 0; تباعد داخلي */
+  width: 59%;
+  text-align: center;
+}
+
+#product_details_container_right {
+  /* height: 100%; */
+  /* width: 40%; الكونتينر يأخذ 50% من عرض الصفحة */
+  /* margin: 0 auto; توسيط الكونتينر */
+  /* border: 1px solid #ccc; إطار للتوضيح */
+  /* padding: 0px; تباعد داخلي */
+
+  width: 40%;
+  height: 100%;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+#img_product_left,
+#product_details_container_right {
+  /* border: 1px solid black; */
+  height: 100%;
+  display: inline-block;
+}
+
+#pro_img {
+  max-width: 110%; /* الصورة لن تتجاوز عرض العنصر الأب */
+  height: 90%; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.link-Decoration {
+  text-decoration: none;
+  color: #3c3737;
+}
+
+#home:hover {
+  color: #070707;
+  font-weight: bold;
+}
+
+#info_Name {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+#info_Category {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+#info_Availability {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+#info_Price {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: #e54d2f;
+}
+
+.styleMainCost {
+  color: #070707;
+  text-decoration: line-through;
+}
+
+#info_Color {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* #info_Icon-ShowColor {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 40px;
+} */
+
+#icon_ShowColor {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  margin-bottom: 35px;
+}
+
+#icon_ShowColor:hover {
+  transform: scale(10);
+  z-index: 1;
+  position: relative;
+}
+
+#info_Size {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+#info_Quantity {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#info_quantity_Dec-Inc {
+  /* font-weight: bold; */
+  font-size: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  height: 50px;
+  width: 130px;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+#quantity_Dec {
+  margin-right: 25px;
+  /* border: 1px solid black; */
+  /* border-radius: 50%; */
+}
+
+#quantity_Dec:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+}
+
+
+#quantity_Inc {
+  margin-left: 25px;
+  /* border: 1px solid black;
+  border-radius: 50%; */
+}
+
+
+#quantity_Inc:hover {
+  cursor: pointer;
+  color: blue;
+  font-weight: bolder;
+}
+
+#info_price-X-quantity {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+#info_sizeGuide {
+  /* font-weight: bold; */
+  font-size: 25px;
+  margin-bottom: 35px;
+  color: #070707;
+}
+
+#info_sizeGuide:hover {
+  text-decoration: underline;
+}
+
+#buttons-Container,
+#button-Payment {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+#addToCart {
+  width: 79%;
+  height: 55px;
+  text-align: center;
+  align-content: center;
+  /* color: #070707; */
+  background-color: #efde56;
+  font-weight: bold;
+  font-size: 17px;
+  /* border: 1px solid black; */
+  border: none;
+}
+
+#addToCart:hover {
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: background-color 0.8s;
+}
+
+#toWishList {
+  font-size: 30px;
+  text-align: center;
+  align-content: center;
+  color: rgb(216, 65, 65);
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 25px;
+}
+
+#toWishList:hover {
+  background-color: #070707;
+  font-size: 40px;
+  color: #efdc00;
+  cursor: pointer;
+}
+
+#toPayment {
+  color: white;
+  background-color: #070707;
+  width: 93%;
+  height: 49px;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#toPayment:hover {
+  background-color: #3c3737;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.btn_float {
+  float: left;
+}
+.floatBox {
+  float: left;
+}
+
+.clear_float {
+  clear: both;
+}
