@@ -1,0 +1,97 @@
+/* Reset styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Img section */
+#bg {
+    background-image: url('../assets/0.webp');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Video section */
+#bg-video-section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 140px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+/* Navigation styles */
+.nav-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-menu a:hover::after {
+    display: block;
+    background-color: white;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    letter-spacing: 1px;
+}
+
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+
+.nav-bar:hover .dropdown {
+    display: block;
+}
+
+/* Right Icons */
+#icons i{
+    margin-right: 40px;
+    color: white;
+    font-size: 26px;
+}
