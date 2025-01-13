@@ -234,3 +234,115 @@ body{
   cursor: pointer;;
   display: none; 
 }
+
+
+
+
+#continue-shopping-btn {
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  margin-top: 10px;
+  color: #f7Da4c;
+    font-weight: bold;
+    display: none;
+}
+#continue-shopping-btn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+
+
+/*side bar//////////////////////////////////////////////*/
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    display: none; 
+}
+
+#sidebar.show {
+    
+    display: block;
+}
+#userData p{
+    font-size: 25px;
+
+}
+#userData #regButton{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#userData #regButton:hover{
+    background-color: #467549;
+}
+#sidebar #changePassword{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#sidebar #changePassword:hover{
+    background-color: #7f4c4c;
+}
+#sidebar #logout{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #4c4caf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom: 10px;
+}
+#sidebar #logout:hover{
+    background-color: #4c4c7f;
+}
+
+
+#closeSidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+.user-btn {
+    background: none;
+    border: none;
+    margin-right: 22px;
+    margin-top: 18px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+

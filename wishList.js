@@ -1,10 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
     var wishlistItems = JSON.parse(localStorage.getItem("wishlistItems")) || [];
     var container = document.getElementById("wishcontainer");
+     let cobtn = document.getElementById('continue-shopping-btn')
 
-    if (wishlistItems.length === 0) {
-        container.innerHTML = "<p>No items in wishlist</p>";
-        return;
+      cobtn.onclick= function(){
+        window.location.href="home.html?category=men"
+      }
+      
+        emptyPage(wishlistItems)
+
+    
+    // Empty Page
+    function emptyPage(UpdatewishlistItems){
+        
+        if (UpdatewishlistItems.length === 0) {
+            container.innerHTML = "<p>No items in wishlist</p>";
+            container.style.fontSize="40px"
+            cobtn.style.width= '500px'
+            cobtn.style.display="block";
+                container.appendChild(cobtn)
+                container.style.display= 'grid';
+                container.style.padding = '10%';
+                container.style.justifyContent = 'center'; 
+    
+            return;
+        }
     }
 
     // SHOW PRODUCT
@@ -42,11 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
             var updatedWishlist = wishlist.filter(item => item.product.title !== product.product.title);
             localStorage.setItem("wishlistItems", JSON.stringify(updatedWishlist));
             container.removeChild(card);
-
-            if (updatedWishlist.length === 0) {
-                container.innerHTML = "<p>No items in wishlist</p>";
-                return;
-            }
+            emptyPage(updatedWishlist);
+   
         });
 
         var productDetails = document.createElement("div");
