@@ -98,3 +98,8 @@ header img {
     color: white;
     font-size: 26px;
 }
+@media (max-width: 1024px) {
+  body {
+    display: none;
+  }
+}
