@@ -69,14 +69,27 @@
     </div>
   </header>
 
+  <main>
+  <div id="filters" >
+    <input type="text" id="type-search" placeholder="Search" style="padding: 5px; margin-right: 10px;">
+    <label for="price-range" style="margin-right: 10px;">Price Range:</label>
+    <div>
+      <input type="range" id="price-range" min="0" max="10000" step="50" value="5000" style="margin-right: 10px;">
+      <span id="price-value" style="font-weight: bold;">5000</span>
+    </div>
+    <button id="apply-filters" style="padding: 5px;">Apply Filters</button>
+  </div>
+  <div id="main-prodcuts">
   <div>
     <p style="margin-left: 30px;font-size: 20px;">View as :
       <span id="two-column"><i class="fa-sharp fa-solid fa-pause"></i></span>
       <span id="three-column"><i class="fa-solid fa-bars"></i></span>
     </p>
   </div>
-
+  
   <div id="products-container"></div>
+</div>
+</main>
   <button id="up"><i class="fa-solid fa-arrow-up"></i></button>
   <div class="footer">
     <div class="mail">
