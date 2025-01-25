@@ -153,8 +153,12 @@ function loadProducts(category) {
                 var title = document.createElement('div');
                 title.classList.add('product-title');
                 title.textContent = product.product.title;
+                let type = document.createElement('p');
+                type.classList.add('product-type');
+                type.textContent = product.product.type;
                 productDiv.appendChild(title);
-
+                productDiv.appendChild(type);
+                
                 var price = document.createElement('div');
                 price.classList.add('product-price');
                 price.textContent = product.price.amount + ' ' + product.price.currencyCode;
@@ -175,14 +179,15 @@ function loadProducts(category) {
 twocolumn.addEventListener('click', function () {
     var products = document.querySelectorAll('.product');
     products.forEach(function (product) {
-        product.style.width = '320px';
+        product.style.width = '500px';
+
     });
 });
 
 threecolumn.addEventListener('click', function () {
     var products = document.querySelectorAll('.product');
     products.forEach(function (product) {
-        product.style.width = '220px';
+        product.style.width = '320px';
     });
 });
 
@@ -204,3 +209,35 @@ btn.onclick = function () {
         behavior: "smooth",
     });
 };
+
+/// filter & search
+
+var priceRange = document.getElementById('price-range');
+var priceValue = document.getElementById('price-value');
+
+
+priceRange.addEventListener('input', function () {
+  priceValue.textContent = priceRange.value;
+});
+
+document.getElementById('apply-filters').addEventListener('click', function () {
+  let typeSearch = document.getElementById('type-search').value.toLowerCase();
+  let maxPrice = parseFloat(priceRange.value);
+
+  let products = document.querySelectorAll('.product');
+  products.forEach(function (product) {
+    let productType = product.querySelector('.product-type').textContent.toLowerCase();
+    let productPrice = parseFloat(product.querySelector('.product-price').textContent);
+
+    if (
+      (typeSearch === '' || productType.includes(typeSearch)) &&
+      productPrice <= maxPrice
+    ) {
+      product.style.display = 'block'; 
+    } else {
+      product.style.display = 'none'; 
+    }
+  });
+});
+
+  
